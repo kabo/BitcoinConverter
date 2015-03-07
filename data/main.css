@@ -1,0 +1,42 @@
+html {
+	width: 100px;
+	margin: 0;
+	padding: 0;
+	font-family: "Arial Rounded MT Bold",sans-serif;
+}
+body {
+	background-color: #666;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+  margin: 0;
+	padding: 10px;
+}
+#btc_input {
+  -moz-appearance: textfield;
+	font-size: 16px;
+	width: 72px;
+	margin: 0;
+	text-align: center;
+	border-radius: 5px
+}
+#usd {
+  margin: 10px 0 0 0;
+  padding: 0 auto;
+	text-align: center;
+	color: #FFF;
+	font-size: 130%;
+}
+#rate {
+  text-align: right;
+  margin: 5px 0 0 0;
+  padding: 0 auto;
+	font-size: 60%;
+	color: #FFF;
+}
+#spinner {
+  display: none;
+  margin: 10px auto;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "bitcoinconverter",
+  "title": "BitcoinConverter",
+  "id": "jid1-48sPyP04VraOpA",
+  "description": "Convert BTC to USD",
+  "author": "Calle Kabo",
+  "license": "MPL 2.0",
+  "version": "0.1"
+}
