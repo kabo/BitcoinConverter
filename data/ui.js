@@ -4,9 +4,14 @@ var usd_wrap    = document.getElementById("usd");
 var rate_value  = document.getElementById("rate_value");
 var spinner     = document.getElementById("spinner");
 var unit_symbol = document.getElementById("unit_symbol");
+var prefs       = document.getElementById("prefs");
 var timeout     = undefined;
 
-btc_input.addEventListener('keyup', function onkeyup(event) {
+prefs.addEventListener('click', function(event) {
+	self.port.emit("pleasePrefs");
+}, false);
+
+btc_input.addEventListener('keyup', function(event) {
 	if (timeout != undefined) {
 	 clearTimeout(timeout);
 	}
