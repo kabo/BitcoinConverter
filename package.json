@@ -5,5 +5,23 @@
   "description": "Convert BTC to USD, using BitStamp API",
   "author": "Calle Kabo <calle@kabo.nu>",
   "license": "MPL 2.0",
-  "version": "0.1"
+  "icon": "data/bitcoin64.png",
+  "version": "0.1",
+  "preferences": [{
+    "name": "unit",
+    "title": "Unit",
+    "description": "Which unit to base calculations on",
+    "type": "radio",
+    "value": "BTC",
+    "options": [
+      {
+				"value": "BTC",
+				"label": "BTC"
+			},
+			{
+				"value": "mBTC",
+				"label": "mBTC"
+      }
+    ]
+  }]
 }
