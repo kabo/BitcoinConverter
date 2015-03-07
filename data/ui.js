@@ -1,11 +1,10 @@
-//TODO: show spinner while calculating
-
 var btc_input  = document.getElementById("btc_input");
 var usd_value  = document.getElementById("usd_value");
 var usd_wrap   = document.getElementById("usd");
 var rate_value = document.getElementById("rate_value");
 var spinner    = document.getElementById("spinner");
 var timeout    = undefined;
+
 btc_input.addEventListener('keyup', function onkeyup(event) {
   var val = btc_input.value;
 	if (timeout != undefined) {
@@ -22,11 +21,6 @@ btc_input.addEventListener('keyup', function onkeyup(event) {
 		spinner.style.display = "block";
 	}, 300);
 }, false);
-/*var btc_form = document.getElementById("btc_form");
-btc_form.addEventListener('submit', function(event) {
-  event.stopPropagation();
-  self.port.emit("pleaseConvert", btc_input.value);
-}, false);*/
 
 self.port.on("newConversion", function(usd){
   console.info("received newConversion with usd=%s, setting usd_value...", usd);
