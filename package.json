@@ -6,7 +6,7 @@
   "author": "Calle Kabo <calle@kabo.nu>",
   "license": "MPL 2.0",
   "icon": "data/bitcoin64.png",
-  "version": "0.1",
+  "version": "0.2",
   "preferences": [{
     "name": "unit",
     "title": "Unit",
